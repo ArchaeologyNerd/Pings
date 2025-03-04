@@ -1,0 +1,9 @@
+name: Pings
+version: '${project.version}'
+main: femboys.are.cute.Pings
+author: FemBoysAreCut3
+commands:
+  pings:
+    description: Reload config
+    usage: /pings reload
+    permission: pings.reload
