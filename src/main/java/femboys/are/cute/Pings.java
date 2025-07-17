@@ -44,7 +44,7 @@ public class Pings extends JavaPlugin implements Listener {
         pitch = (float) getConfig().getDouble("pitch", 0.8);
     }
 
-    @EventHandler
+    @EventHandler(ignoreCancelled = true)
     public void onPlayerChat(AsyncPlayerChatEvent event) {
         String message = event.getMessage();
         Player sender = event.getPlayer();
